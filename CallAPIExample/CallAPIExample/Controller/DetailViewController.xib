@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetailViewController" customModule="CallAPIExample" customModuleProvider="target">
+            <connections>
+                <outlet property="aqiLabel" destination="8K6-lZ-7eJ" id="6MA-1T-4tb"/>
+                <outlet property="countyLabel" destination="piQ-Md-2Yc" id="Tax-Yr-6Yh"/>
+                <outlet property="influenceTitle" destination="Rga-ys-6OR" id="3tk-qc-16z"/>
+                <outlet property="influenceValue" destination="Gnt-C7-32E" id="Qi4-7g-E1y"/>
+                <outlet property="measureTitle" destination="sl4-Ir-nLK" id="uLs-J0-b2h"/>
+                <outlet property="measureValue" destination="VzQ-NE-gta" id="LNz-gF-Xdu"/>
+                <outlet property="statusLabel" destination="p8r-3u-zCO" id="heb-Ip-4s7"/>
+                <outlet property="statusView" destination="Byb-mr-7OY" id="UFh-Ju-dgw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Byb-mr-7OY">
+                    <rect key="frame" x="46.666666666666657" y="176" width="300" height="525"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="台中市" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="piQ-Md-2Yc">
+                            <rect key="frame" x="10" y="10" width="181" height="71.666666666666671"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="對敏感族群不健康" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8r-3u-zCO">
+                            <rect key="frame" x="35" y="121.66666666666669" width="230" height="119.66666666666669"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rga-ys-6OR">
+                            <rect key="frame" x="15" y="281.33333333333331" width="140" height="24"/>
+                            <string key="text">對健康的影響	</string>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gnt-C7-32E">
+                            <rect key="frame" x="25" y="313.33333333333331" width="250" height="64.666666666666686"/>
+                            <string key="text">心臟病和肺病患者症狀顯著加劇，運動耐受力降低，健康人群普遍出現症狀	</string>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="建議採取的措施" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sl4-Ir-nLK">
+                            <rect key="frame" x="15" y="386" width="142.66666666666666" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="兒童、老年人及心臟病、呼吸系統疾病患者應停留在室內，停止戶外活動，一般人群應避免戶外活動" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzQ-NE-gta">
+                            <rect key="frame" x="25" y="418" width="250" height="61"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8K6-lZ-7eJ">
+                            <rect key="frame" x="222.33333333333334" y="30" width="37.666666666666657" height="36"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemTealColor"/>
+                    <constraints>
+                        <constraint firstItem="VzQ-NE-gta" firstAttribute="leading" secondItem="Byb-mr-7OY" secondAttribute="leading" constant="25" id="0dl-bq-50r"/>
+                        <constraint firstAttribute="width" constant="300" id="8JJ-VY-uFe"/>
+                        <constraint firstItem="Rga-ys-6OR" firstAttribute="leading" secondItem="Byb-mr-7OY" secondAttribute="leading" constant="15" id="CCd-fe-6al"/>
+                        <constraint firstItem="VzQ-NE-gta" firstAttribute="top" secondItem="sl4-Ir-nLK" secondAttribute="bottom" constant="8" id="DvR-ov-TI0"/>
+                        <constraint firstItem="Gnt-C7-32E" firstAttribute="top" secondItem="Rga-ys-6OR" secondAttribute="bottom" constant="8" id="Hoy-9k-Sap"/>
+                        <constraint firstItem="p8r-3u-zCO" firstAttribute="top" secondItem="piQ-Md-2Yc" secondAttribute="bottom" constant="40" id="K3R-lh-k51"/>
+                        <constraint firstItem="sl4-Ir-nLK" firstAttribute="leading" secondItem="Byb-mr-7OY" secondAttribute="leading" constant="15" id="RdQ-Ta-aee"/>
+                        <constraint firstAttribute="trailing" secondItem="8K6-lZ-7eJ" secondAttribute="trailing" constant="40" id="Y8N-5Q-tPk"/>
+                        <constraint firstItem="piQ-Md-2Yc" firstAttribute="leading" secondItem="Byb-mr-7OY" secondAttribute="leading" constant="10" id="jry-e5-QmY"/>
+                        <constraint firstItem="p8r-3u-zCO" firstAttribute="leading" secondItem="Byb-mr-7OY" secondAttribute="leading" constant="35" id="l6F-hb-m9U"/>
+                        <constraint firstAttribute="trailing" secondItem="VzQ-NE-gta" secondAttribute="trailing" constant="25" id="lsO-XF-be9"/>
+                        <constraint firstAttribute="trailing" secondItem="Gnt-C7-32E" secondAttribute="trailing" constant="25" id="m1s-WZ-el7"/>
+                        <constraint firstItem="Rga-ys-6OR" firstAttribute="top" secondItem="p8r-3u-zCO" secondAttribute="bottom" constant="40" id="p1X-1c-9gb"/>
+                        <constraint firstItem="piQ-Md-2Yc" firstAttribute="top" secondItem="Byb-mr-7OY" secondAttribute="top" constant="10" id="pkU-fp-zZb"/>
+                        <constraint firstAttribute="trailing" secondItem="p8r-3u-zCO" secondAttribute="trailing" constant="35" id="qGe-ar-Ky3"/>
+                        <constraint firstItem="8K6-lZ-7eJ" firstAttribute="top" secondItem="Byb-mr-7OY" secondAttribute="top" constant="30" id="rqG-sT-E8U"/>
+                        <constraint firstItem="Gnt-C7-32E" firstAttribute="leading" secondItem="Byb-mr-7OY" secondAttribute="leading" constant="25" id="sUX-M3-0rm"/>
+                        <constraint firstAttribute="height" constant="525" id="xN0-xQ-SVT"/>
+                        <constraint firstItem="sl4-Ir-nLK" firstAttribute="top" secondItem="Gnt-C7-32E" secondAttribute="bottom" constant="8" id="ylo-Jy-U9k"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.80762363539165671" green="0.89065883677689839" blue="0.92549019607843142" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Byb-mr-7OY" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="SrZ-bu-8o1"/>
+                <constraint firstItem="Byb-mr-7OY" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="bn7-yE-8JP"/>
+            </constraints>
+            <point key="canvasLocation" x="25" y="-11"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
